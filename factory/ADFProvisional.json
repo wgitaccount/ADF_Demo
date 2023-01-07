@@ -1,0 +1,9 @@
+{
+	"name": "ADFProvisional",
+	"location": "westeurope",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "cfc8f68e-9ab6-4a43-8227-ba8a4f8eee66",
+		"tenantId": "5fcc37a4-d54b-4f1f-9137-60487ab3b53f"
+	}
+}
