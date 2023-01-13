@@ -7,10 +7,6 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "ADFProvisionalDEV"
 		},
-		"AzureBlobStorage1_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'AzureBlobStorage1'"
-		},
 		"AzureKeyVaultProvisional_properties_typeProperties_baseUrl": {
 			"type": "string",
 			"defaultValue": "https://azvaultprovisional.vault.azure.net/"
@@ -52,19 +48,6 @@
 					"cancelAfter": {}
 				},
 				"annotations": []
-			},
-			"dependsOn": []
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/AzureBlobStorage1')]",
-			"type": "Microsoft.DataFactory/factories/linkedServices",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"annotations": [],
-				"type": "AzureBlobStorage",
-				"typeProperties": {
-					"connectionString": "[parameters('AzureBlobStorage1_connectionString')]"
-				}
 			},
 			"dependsOn": []
 		},
